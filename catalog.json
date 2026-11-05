@@ -1,5 +1,24 @@
 {
   "schema_version": 1,
   "repository": "Yseven004/xiaoqi-capabilities",
-  "packages": []
+  "packages": [
+    {
+      "id": "study-notes-studio",
+      "version": "1.0.0",
+      "type": "skill",
+      "display_name": "学霸笔记图",
+      "description": "把学习材料整理成清晰、可复习的笔记图。",
+      "host_api": 1,
+      "source_commit": "ad80ba95f82006e36ec394f2bcfbcb4c1c062f00",
+      "asset_url": "https://github.com/Yseven004/xiaoqi-capabilities/releases/download/study-notes-studio-v1.0.0/study-notes-studio.zip",
+      "asset_sha256": "66dab79ff7dd2de84355ffa41acfa683a77cb69461475d228f6833c247c73322",
+      "required_tools": [
+        "read_skill_resource",
+        "generate_image"
+      ],
+      "runtime": {},
+      "capabilities": [],
+      "mcp": null
+    }
+  ]
 }
