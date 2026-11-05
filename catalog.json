@@ -3,6 +3,39 @@
   "repository": "Yseven004/xiaoqi-capabilities",
   "packages": [
     {
+      "id": "book-to-skill",
+      "version": "1.0.0",
+      "type": "skill",
+      "display_name": "Book to Skill · 书籍转技能",
+      "description": "将书籍与长文档整理成可复用的结构化技能。",
+      "host_api": 1,
+      "source_commit": "ad80ba95f82006e36ec394f2bcfbcb4c1c062f00",
+      "asset_url": "https://github.com/Yseven004/xiaoqi-capabilities/releases/download/book-to-skill-v1.0.0/book-to-skill.zip",
+      "asset_sha256": "6f6932aec969b693e19cc3696a24bc25ae90e8e45e713d4667d1bd5476f7600a",
+      "required_tools": [
+        "read_skill_resource",
+        "execute_skill_script",
+        "set_task_deliverables"
+      ],
+      "runtime": {
+        "commands": [
+          "pdftotext",
+          "ebook-convert"
+        ],
+        "python_modules": [
+          "pypdf",
+          "pdfminer",
+          "ebooklib",
+          "bs4",
+          "docx",
+          "trafilatura",
+          "striprtf"
+        ]
+      },
+      "capabilities": [],
+      "mcp": null
+    },
+    {
       "id": "study-notes-studio",
       "version": "1.0.0",
       "type": "skill",
