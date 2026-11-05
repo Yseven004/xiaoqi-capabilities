@@ -36,6 +36,25 @@
       "mcp": null
     },
     {
+      "id": "learning-notes-manager",
+      "version": "1.0.0",
+      "type": "plugin",
+      "display_name": "学习笔记管家",
+      "description": "将学习任务中的知识点追加到原生笔记并保留来源。",
+      "host_api": 1,
+      "source_commit": "ad80ba95f82006e36ec394f2bcfbcb4c1c062f00",
+      "asset_url": "https://github.com/Yseven004/xiaoqi-capabilities/releases/download/learning-notes-manager-v1.0.0/learning-notes-manager.zip",
+      "asset_sha256": "9a97322fec1596045949673569b234c2196314c67011727282c72068555cceaa",
+      "required_tools": [
+        "append_learning_notes"
+      ],
+      "runtime": {},
+      "capabilities": [
+        "learning_notes.append"
+      ],
+      "mcp": null
+    },
+    {
       "id": "original-reading-annotations",
       "version": "1.0.0",
       "type": "plugin",
