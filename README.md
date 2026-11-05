@@ -18,6 +18,12 @@ package. Sources, attribution, and licenses remain with the package. Host APIs,
 private user material, approval decisions, note storage, and task state belong
 to Xiaoqi.
 
+The `capabilities` field is a version-specific request for a Xiaoqi host feature.
+Only a package installed from this trusted catalog can use those claims, and
+Xiaoqi still applies its own authorization checks. The original annotation
+package requests `image.annotate_original`; the notes manager requests
+`learning_notes.append`.
+
 ## Install and update
 
 Xiaoqi reads [`catalog.json`](catalog.json) for the latest stable version and

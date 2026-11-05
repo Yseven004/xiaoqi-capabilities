@@ -2,7 +2,11 @@
   "id": "study-notes-studio",
   "version": "1.0.0",
   "type": "skill",
+  "display_name": "学霸笔记图",
+  "description": "把学习材料整理成清晰、可复习的笔记图。",
   "host_api": 1,
   "required_tools": ["read_skill_resource", "generate_image"],
+  "runtime": {},
+  "capabilities": [],
   "mcp": null
 }

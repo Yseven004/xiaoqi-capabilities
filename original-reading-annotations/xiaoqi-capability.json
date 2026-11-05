@@ -2,8 +2,11 @@
   "id": "original-reading-annotations",
   "version": "1.0.0",
   "type": "plugin",
+  "display_name": "原文批注",
+  "description": "保留原图，并依据 OCR 位置添加清晰的阅读批注。",
   "host_api": 1,
   "required_tools": ["read_skill_resource", "execute_skill_script", "set_task_deliverables"],
   "runtime": {"commands": ["tesseract"], "python_modules": ["Pillow"]},
+  "capabilities": ["image.annotate_original"],
   "mcp": null
 }

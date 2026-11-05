@@ -2,7 +2,14 @@
   "id": "book-to-skill",
   "version": "1.0.0",
   "type": "skill",
+  "display_name": "Book to Skill · 书籍转技能",
+  "description": "将书籍与长文档整理成可复用的结构化技能。",
   "host_api": 1,
   "required_tools": ["read_skill_resource", "execute_skill_script", "set_task_deliverables"],
+  "runtime": {
+    "commands": ["pdftotext", "ebook-convert"],
+    "python_modules": ["pypdf", "pdfminer", "ebooklib", "bs4", "docx", "trafilatura", "striprtf"]
+  },
+  "capabilities": [],
   "mcp": null
 }

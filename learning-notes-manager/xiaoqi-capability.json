@@ -2,7 +2,11 @@
   "id": "learning-notes-manager",
   "version": "1.0.0",
   "type": "plugin",
+  "display_name": "学习笔记管家",
+  "description": "将学习任务中的知识点追加到原生笔记并保留来源。",
   "host_api": 1,
   "required_tools": ["append_learning_notes"],
+  "runtime": {},
+  "capabilities": ["learning_notes.append"],
   "mcp": null
 }

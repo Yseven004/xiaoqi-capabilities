@@ -13,4 +13,11 @@ jobs:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
-      - run: python3 scripts/validate_packages.py
+      - name: Install package test dependencies
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends python3-pil tesseract-ocr tesseract-ocr-chi-sim fonts-noto-cjk
+      - name: Validate package boundaries and metadata
+        run: /usr/bin/python3 scripts/validate_packages.py
+      - name: Test book extraction package
+        run: /usr/bin/python3 -m unittest discover -s book-to-skill/tests -p 'test_*.py' -v
+      - name: Test original annotation package
+        run: /usr/bin/python3 -m unittest discover -s original-reading-annotations/tests -p 'test_*.py' -v
