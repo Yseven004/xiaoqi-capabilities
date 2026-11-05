@@ -17,6 +17,8 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends python3-pil tesseract-ocr tesseract-ocr-chi-sim fonts-noto-cjk
       - name: Validate package boundaries and metadata
         run: /usr/bin/python3 scripts/validate_packages.py
+      - name: Test deterministic package publishing
+        run: /usr/bin/python3 -m unittest scripts.test_publish_package -v
       - name: Test book extraction package
         run: /usr/bin/python3 -m unittest discover -s book-to-skill/tests -p 'test_*.py' -v
       - name: Test original annotation package
