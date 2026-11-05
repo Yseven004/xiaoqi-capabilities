@@ -1,0 +1,9 @@
+{
+  "id": "original-reading-annotations",
+  "version": "1.0.0",
+  "type": "plugin",
+  "host_api": 1,
+  "required_tools": ["read_skill_resource", "execute_skill_script", "set_task_deliverables"],
+  "runtime": {"commands": ["tesseract"], "python_modules": ["Pillow"]},
+  "mcp": null
+}

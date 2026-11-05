@@ -1,0 +1,8 @@
+{
+  "id": "learning-notes-manager",
+  "version": "1.0.0",
+  "type": "plugin",
+  "host_api": 1,
+  "required_tools": ["append_learning_notes"],
+  "mcp": null
+}

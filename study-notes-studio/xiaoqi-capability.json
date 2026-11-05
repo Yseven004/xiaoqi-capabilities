@@ -1,0 +1,8 @@
+{
+  "id": "study-notes-studio",
+  "version": "1.0.0",
+  "type": "skill",
+  "host_api": 1,
+  "required_tools": ["read_skill_resource", "generate_image"],
+  "mcp": null
+}
