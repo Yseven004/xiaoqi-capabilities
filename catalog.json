@@ -36,6 +36,34 @@
       "mcp": null
     },
     {
+      "id": "original-reading-annotations",
+      "version": "1.0.0",
+      "type": "plugin",
+      "display_name": "原文批注",
+      "description": "保留原图，并依据 OCR 位置添加清晰的阅读批注。",
+      "host_api": 1,
+      "source_commit": "ad80ba95f82006e36ec394f2bcfbcb4c1c062f00",
+      "asset_url": "https://github.com/Yseven004/xiaoqi-capabilities/releases/download/original-reading-annotations-v1.0.0/original-reading-annotations.zip",
+      "asset_sha256": "abd75804be625d1b8ebfa9558951c50bae816369e70e6dffaaff8ba2fb7a85f4",
+      "required_tools": [
+        "read_skill_resource",
+        "execute_skill_script",
+        "set_task_deliverables"
+      ],
+      "runtime": {
+        "commands": [
+          "tesseract"
+        ],
+        "python_modules": [
+          "Pillow"
+        ]
+      },
+      "capabilities": [
+        "image.annotate_original"
+      ],
+      "mcp": null
+    },
+    {
       "id": "study-notes-studio",
       "version": "1.0.0",
       "type": "skill",
